@@ -1,0 +1,14 @@
+{
+  "name": "kasper-js",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "angular-resource": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "requirejs": "^2.2.0"
+  }
+}

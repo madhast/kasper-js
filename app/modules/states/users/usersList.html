@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Группа</th>
+            <th>Телефон</th>
+            <th>Почта</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in users | orderBy: 'name.first'">
+            <td>
+                <span ng-bind="user.name.first"></span>
+                <span ng-bind="user.name.last"></span>
+            </td>
+            <td>
+                <span ng-bind="user.groupName"></span>
+            </td>
+            <td>
+                <span ng-bind="user.phone"></span>
+            </td>
+            <td>
+                <span ng-bind="user.email"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>

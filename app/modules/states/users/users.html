@@ -1,0 +1,21 @@
+<h1>Список пользователей</h1>
+<div>
+    <span>Счетчик пользователей:</span>
+    <span ng-bind="users.length"></span>
+</div>
+
+<select name="view_mode" ng-model="activeViewMode" ng-options="item as item.title for item in viewModes track by item.mode"></select>
+
+<hr />
+
+<section ng-switch="activeViewMode.mode">
+    <section ng-switch-when="list">
+        <div users-list-dir users="users"></div>
+    </section>
+    <section ng-switch-when="plate">
+        <div users-plate-dir users="users"></div>
+    </section>
+    <section ng-switch-when="trello">
+        <div users-trello-dir users="users" groups="usersGroups"></div>
+    </section>
+</section>
